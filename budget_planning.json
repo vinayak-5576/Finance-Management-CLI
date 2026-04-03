@@ -1,0 +1,9 @@
+{
+    "Travel" : {"min" : 150, "max" : 500},
+    "College" : {"min" : 100, "max" : 200},
+    "Fun" : {"min" : 500, "max" : 800},
+    "Food" : {"min" : 250, "max" : 600},
+    "College event" : {"min" : 150, "max" : 250},
+    "Necessities" : {"min" : 150, "max" : 350},
+    "My stuff" : {"min" : 300, "max" : 500}   
+}
