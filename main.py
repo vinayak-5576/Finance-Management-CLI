@@ -1,5 +1,5 @@
 import json
-
+import pandas as pd
 with open ("Categories.json","r") as file:
     data = json.load(file)
 with open ("budget_planning.json","r") as file:
@@ -110,8 +110,40 @@ def budget_planning():
     else:
         print('Invalid choice')
         return
+    
+def show_table():
+    row =[]
+    for item in data:
+        Actual = sum(data[item])
+    
+        if item in budget_data:
+            min_budget = budget_data[item]["min"]
+            max_budget = budget_data[item]["max"]
+            if max_budget !=0:
+                usage = (Actual/max_budget)*100
+                usage2 = round(usage,2)
+            else:
+                usage2 = 0
+        else:
+            min_budget = 0
+            max_budget = 0
+            usage2 = 0
+        
+        row.append({
+            "Category" : item,
+            "Minimum" : min_budget,
+            "Maximum": max_budget,
+            "Actual" : Actual,
+            "Usage (%)" : usage2,
+            "Difference" : Actual - max_budget
+            })
+    df= pd.DataFrame(row)
+    print(df)
+    
+
+        
 while True:
-    print('1.add expense \n2.check expense \n3.Budget planning \n4.exit')
+    print('1.Add expense \n2.Check expense \n3.Budget planning \n4.Show table \n5.Exit')
     try:
         USER_WISH = int(input('Wt are Wishing to go for?'))
     except:
@@ -122,9 +154,11 @@ while True:
         add_money()
     elif USER_WISH == 2:
         show_expense()
-    elif USER_WISH ==3:
+    elif USER_WISH == 3:
         budget_planning()
     elif USER_WISH == 4:
+        show_table()
+    elif USER_WISH == 5:
         break
     
 print('Done')
