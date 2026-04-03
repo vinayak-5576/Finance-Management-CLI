@@ -67,6 +67,7 @@ The project now includes a tabular view of financial data:
 | Category | Minimum | Maximum | Actual | Usage (%) | Difference |
 | -------- | ------- | ------- | ------ | --------- | ---------- |
 | Travel   | 100     | 500     | 300    | 60%       | 200        |
+| ......   | ...     | ...     | ...    | ...       | ...        |
 
 This helps in better understanding and analyzing expenses.
 
