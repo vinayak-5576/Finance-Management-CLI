@@ -1,25 +1,26 @@
 # 💰 Finance Management CLI
 
 A command-line based Finance and Budget Management system built using Python.
-This project helps track expenses, categorize spending, and analyze budgets with useful insights.
+This project allows users to track expenses, analyze spending patterns, and compare against budget limits with structured data insights.
 
 ---
 
 ## 🚀 Features
 
 * Add expenses by category
-* View total and category-wise expenses
+* View category-wise and total expenses
 * Budget planning with minimum and maximum limits
 * Percentage usage of budget
 * Warning system when nearing budget limit (≥80%)
-* Persistent data storage using JSON
+* 📊 Tabular data view using Pandas
 
 ---
 
 ## 🛠️ Tech Stack
 
 * Python
-* JSON
+* JSON (data storage)
+* Pandas (data analysis & table view)
 
 ---
 
@@ -45,7 +46,13 @@ git clone https://github.com/vinayak-5576/Finance-Management-CLI.git
 cd Finance-Management-CLI
 ```
 
-3. Run the program:
+3. Install dependencies:
+
+```
+pip install pandas
+```
+
+4. Run the program:
 
 ```
 python main.py
@@ -53,21 +60,23 @@ python main.py
 
 ---
 
-## 📊 What It Does
+## 📊 Data Table Feature
 
-* Tracks expenses across categories like Travel, Food, etc.
-* Calculates total spending
-* Compares spending with budget limits
-* Displays percentage of budget used
-* Gives warnings when budget is close to limit
+The project now includes a tabular view of financial data:
+
+| Category | Minimum | Maximum | Actual | Usage (%) | Difference |
+| -------- | ------- | ------- | ------ | --------- | ---------- |
+| Travel   | 100     | 500     | 300    | 60%       | 200        |
+
+This helps in better understanding and analyzing expenses.
 
 ---
 
 ## 🔮 Future Improvements
 
-* Dashboard using pandas
-* Table-based data visualization
-* Web interface using HTML/CSS
+* Graphs using matplotlib
+* Dashboard interface (Streamlit)
+* Web UI using HTML/CSS
 * Monthly expense tracking
 
 ---
