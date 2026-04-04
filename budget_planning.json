@@ -1,9 +1,103 @@
-{
-    "Travel" : {"min" : 150, "max" : 500},
-    "College" : {"min" : 100, "max" : 200},
-    "Fun" : {"min" : 500, "max" : 800},
-    "Food" : {"min" : 250, "max" : 600},
-    "College event" : {"min" : 150, "max" : 250},
-    "Necessities" : {"min" : 150, "max" : 350},
-    "My stuff" : {"min" : 300, "max" : 500}   
+{ 
+    "January": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "February": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "March": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "April": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "May": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "June": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "July": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "August": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "September": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "November": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    },
+    "December": {
+        "Travel" : {"min" : 150, "max" : 500},
+        "College" : {"min" : 100, "max" : 200},
+        "Fun" : {"min" : 500, "max" : 800},
+        "Food" : {"min" : 250, "max" : 600},
+        "College event" : {"min" : 150, "max" : 250},
+        "Necessities" : {"min" : 150, "max" : 350},
+        "My stuff" : {"min" : 300, "max" : 500}   
+    }
+
+    
 }
