@@ -7,12 +7,16 @@ This project allows users to track expenses, analyze spending patterns, and comp
 
 ## 🚀 Features
 
-* Add expenses by category
-* View category-wise and total expenses
-* Budget planning with minimum and maximum limits
-* Percentage usage of budget
-* Warning system when nearing budget limit (≥80%)
-* 📊 Tabular data view using Pandas
+* 📌 Add expenses category-wise for each month
+* 📊 View total and category-wise expenses
+* 💸 Budget planning with **min/max limits**
+* ⚠️ Smart insights:
+
+  * Over budget alerts
+  * Remaining budget tracking
+  * Usage percentage calculation
+* 🧾 Tabular data visualization using **Pandas**
+* 📅 Monthly expense tracking (January → December)
 
 ---
 
@@ -23,14 +27,32 @@ This project allows users to track expenses, analyze spending patterns, and comp
 * Pandas (data analysis & table view)
 
 ---
+## 🧠 How It Works
 
-## 📂 Project Structure
+* Data is stored in:
 
-* `main.py` → main application
-* `Categories.json` → stores expense data
-* `budget_planning.json` → stores budget limits
+  * `Categories.json` → stores expenses
+  * `budget_planning.json` → stores budget limits
 
----
+* User selects:
+
+  1. Action (Add / View / Budget / Table)
+  2. Month
+  3. Category
+
+* System processes and gives output instantly.
+
+
+## 🗂️ Project Structure
+
+```
+Finance-Management/
+│
+├── main.py                  # Main program
+├── Categories.json         # Expense data
+├── budget_planning.json    # Budget limits
+└── README.md               # Project documentation
+```
 
 ## ▶️ How to Run
 
@@ -59,8 +81,14 @@ python main.py
 ```
 
 ---
+## 📊 Current Capabilities
 
-## 📊 Data Table Feature
+* Monthly expense tracking
+* Category-based analysis
+* Budget comparison (Actual vs Max)
+* Usage percentage calculation
+* Table view using Pandas
+ 📊 Data Table Feature
 
 The project now includes a tabular view of financial data:
 
@@ -75,13 +103,28 @@ This helps in better understanding and analyzing expenses.
 
 ## 🔮 Future Improvements
 
-* Graphs using matplotlib
-* Dashboard interface (Streamlit)
-* Web UI using HTML/CSS
-* Monthly expense tracking
+* 📈 Graphs using Matplotlib / Seaborn
+* 📊 Interactive dashboards
+* 🌐 Web UI using HTML, CSS, Streamlit
+* 📅 Monthly comparison trends
+* 🔔 Smart spending recommendations
 
 ---
 
 ## 🙌 Author
 
-Vinayak
+Built by **Vinayak**
+First step into building real-world Python projects 🚀
+
+---
+
+## ⭐ Note
+
+This is a beginner-to-intermediate level project focused on:
+
+* Learning data structures
+* Building real logic
+* Improving problem-solving
+
+More features and improvements coming soon!
+
