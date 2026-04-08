@@ -185,17 +185,15 @@ def graph():
             if assign_month[Months_choice_input] in months_choice_list:
                 print("Duplicate value")
                 continue
-            months_choice_list.append(assign_month[Months_choice_input])
-            
-            
+            months_choice_list.append(assign_month[Months_choice_input]) 
         except:
             print("Enter a valid number... ")
             continue
     print(months_choice_list, 'these are Your selected months')
     try:
-        print("Category options: \n 1.Travel  2.College  3.Fun  4.Food \n 5.College event  6.Necessities  7.My stuff") 
+        print("Category options: \n 1.Travel  2.College  3.Fun  4.Food \n 5.College event  6.Necessities  7.My stuff 8.Total ") 
         cat_choice_input = int(input("Enter the Serial Number: ")) 
-        if cat_choice_input<1 or cat_choice_input > 7:
+        if cat_choice_input<1 or cat_choice_input > 8:
             print('Invalid choice')
             return
         cat_choice_input = cat_choice_input -1
@@ -205,8 +203,14 @@ def graph():
         return
     months_choice_list.sort(key = lambda x : assign_month.index(x))
     Y = [] 
+   
     for items in months_choice_list:
-        if assign_category[cat_choice_input] in data[items]:
+        net = 0
+        if cat_choice_input == 7:
+            for i in data[items]:
+                net += sum(data[items][i])
+            Y.append(net)
+        elif assign_category[cat_choice_input] in data[items]:
             total = sum(data[items][assign_category[cat_choice_input]])
             Y.append(total)
         else:
@@ -222,7 +226,10 @@ def graph():
         if Graph_choice == 1:
             plt.figure(figsize=(8,5))
             plt.plot(months_choice_list,Y, marker = 'o',linestyle = '-')
-            plt.title(f'Expenses on {assign_category[cat_choice_input]} in these months')
+            if 0<=cat_choice_input <= 6:
+                plt.title(f'Expenses on {assign_category[cat_choice_input]} in these months')
+            elif  cat_choice_input == 7:
+                plt.title(f'Expenses on all categories in these months')
             plt.xlabel("Months")
             plt.ylabel("Expenses")
             plt.grid(True)

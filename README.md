@@ -11,12 +11,17 @@ This project allows users to track expenses, analyze spending patterns, and comp
 * 📊 View total and category-wise expenses
 * 💸 Budget planning with **min/max limits**
 * ⚠️ Smart insights:
-
   * Over budget alerts
   * Remaining budget tracking
   * Usage percentage calculation
 * 🧾 Tabular data visualization using **Pandas**
 * 📅 Monthly expense tracking (January → December)
+* 📊 Data visualization using Matplotlib:
+  * Line Graph (trend over months)
+  * Bar Graph (comparison between months)
+* 🔄 Multi-month comparison support
+* 🧠 Intelligent handling of missing data
+
 
 ---
 
@@ -25,9 +30,12 @@ This project allows users to track expenses, analyze spending patterns, and comp
 * Python
 * JSON (data storage)
 * Pandas (data analysis & table view)
+* Matplotlib (for graphs)
 
 ---
 ## 🧠 How It Works
+* NOTE
+  It already has some data sets of All months so you can eitehr delete the entries or just create a new new json file with similar sort of info.
 
 * Data is stored in:
 
@@ -36,11 +44,16 @@ This project allows users to track expenses, analyze spending patterns, and comp
 
 * User selects:
 
-  1. Action (Add / View / Budget / Table)
+  1. Action (Add / View / Budget / Table / Graph)
   2. Month
   3. Category
+  
+* System:
+  1. Stores in Json
+  2. Calculate totals
+  3. Compares with Your budget plan for that Month
+  4. Display Insights
 
-* System processes and gives output instantly.
 
 
 ## 🗂️ Project Structure
@@ -72,6 +85,8 @@ cd Finance-Management-CLI
 
 ```
 pip install pandas
+python -m pip install matplotlib
+
 ```
 
 4. Run the program:
@@ -98,18 +113,25 @@ The project now includes a tabular view of financial data:
 | ......   | ...     | ...     | ...    | ...       | ...        |
 
 This helps in better understanding and analyzing expenses.
+* Graphs:
+  1. Compare spending across months
+  2. Category-wise visualization
 
 ---
 
 ## 🔮 Future Improvements
 
-* 📈 Graphs using Matplotlib / Seaborn
 * 📊 Interactive dashboards
 * 🌐 Web UI using HTML, CSS, Streamlit
 * 📅 Monthly comparison trends
 * 🔔 Smart spending recommendations
+* Moblie friendly UI
 
 ---
+
+* Motivation
+
+ This project was built to strengthen problem-solving skills, understand real-world data handling, and implement core Python concepts in a practical scenario.
 
 ## 🙌 Author
 
